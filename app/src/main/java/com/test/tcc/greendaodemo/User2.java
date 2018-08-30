@@ -2,19 +2,18 @@ package com.test.tcc.greendaodemo;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
-import org.greenrobot.greendao.annotation.Unique;
 import org.greenrobot.greendao.annotation.Generated;
 
 @Entity
-public class User {
+public class User2 {
     @Id(autoincrement = true)
     private Long id;
     private String userName;
     private String passWord;
     private String lv;
     private String address;
-    @Generated(hash = 1827674859)
-    public User(Long id, String userName, String passWord, String lv,
+    @Generated(hash = 1055359901)
+    public User2(Long id, String userName, String passWord, String lv,
             String address) {
         this.id = id;
         this.userName = userName;
@@ -22,8 +21,8 @@ public class User {
         this.lv = lv;
         this.address = address;
     }
-    @Generated(hash = 586692638)
-    public User() {
+    @Generated(hash = 377798761)
+    public User2() {
     }
     public Long getId() {
         return this.id;
@@ -55,5 +54,4 @@ public class User {
     public void setAddress(String address) {
         this.address = address;
     }
-
 }

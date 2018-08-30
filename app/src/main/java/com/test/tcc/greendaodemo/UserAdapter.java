@@ -16,11 +16,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserAdapter extends RecyclerView.Adapter {
-    private List<User> users;
+    private List<User2> users;
     private Context context;
     OnDeleteUserClickListener onDeleteUserClickListener;
 
-    public UserAdapter(List<User> users, Context context) {
+    public UserAdapter(List<User2> users, Context context) {
         this.users = users;
         this.context = context;
     }
@@ -51,7 +51,7 @@ public class UserAdapter extends RecyclerView.Adapter {
         });
     }
 
-    public void setUsers(List<User> users){
+    public void setUsers(List<User2> users){
         if (users!=null){
             this.users.clear();
             this.users.addAll(users);
@@ -71,10 +71,10 @@ public class UserAdapter extends RecyclerView.Adapter {
     }
 
     interface OnDeleteUserClickListener{
-        void delete(User user);
+        void delete(User2 user);
     }
 
-    public User getDeleteItem(){
+    public User2 getDeleteItem(){
         if (users.size()<1){
             return null;
         }
